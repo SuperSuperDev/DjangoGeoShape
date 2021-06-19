@@ -1,5 +1,5 @@
 
-@PropertyBaseUrl = http://localhost:8000/property-listings
+@PropertyBaseUrl = http://localhost:8000/api/property-listings
 @PropertyId = 1
 
 ### GET ALL
