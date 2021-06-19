@@ -1,3 +1,61 @@
 
 @PropertyBaseUrl = http://localhost:8000/property-listings
-GET {{PropertyBaseUrl}}
+@PropertyId = 1
+
+### GET ALL
+GET {{PropertyBaseUrl}}/
+
+### GET SINGLE
+GET {{PropertyBaseUrl}}/{{PropertyId}}/
+
+### CREATE NEW
+POST {{PropertyBaseUrl}}/
+Content-Type: application/json
+
+{
+  "title": "Great new home",
+  "status": "draft",
+  "listing_status": "for_sale",
+  "listing_type": "residential",
+  "property_type": "house",
+  "bed_num": 5,
+  "bath_num": 3,
+  "floors_num": 2,
+  "floor_location": 5,
+  "sq_meters": 500,
+  "year_built": 2020,
+  "land_size": 500,
+  "furnishings": "unfurnished",
+  "parking_spaces": 0,
+  "reference": "My ref",
+  "short_description": "This is a great new home",
+  "full_description": "A great new home offered for sale in a great place"
+}
+
+### DELETE SINGLE 
+DELETE {{PropertyBaseUrl}}/8/
+
+### UPDATE SINGLE
+PUT {{PropertyBaseUrl}}/1/
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "Property description title",
+  "status": "active",
+  "listingStatus": "for_sale",
+  "listingType": "residential",
+  "propertyType": "house",
+  "bedNum": 1,
+  "bathNum": 1,
+  "floorsNum": 1,
+  "floorLocation": 1,
+  "sqMeters": 1,
+  "yearBuilt": 2000,
+  "landSize": 4,
+  "furnishings": "unfurnished",
+  "parkingSpaces": 3,
+  "reference": "thisIsMyReferencer",
+  "shortDescription": "This is my short description",
+  "fullDescription": "This is my longer description"
+}
