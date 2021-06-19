@@ -3,7 +3,6 @@
   "model": "real_estate.property_listing",
   "pk": 1,
   "fields": {
-    "uuid": "d60581f5-aec6-4f98-b03b-2d377b2bb215",
     "title": "Property description title",
     "status": "active",
     "listing_status": "for_sale",
@@ -27,7 +26,6 @@
   "model": "real_estate.property_listing",
   "pk": 2,
   "fields": {
-    "uuid": "14981b99-01ff-424d-b246-326cd56c7bdb",
     "title": "Another property Listing",
     "status": "draft",
     "listing_status": "for_sale",

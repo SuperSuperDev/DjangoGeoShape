@@ -15,7 +15,7 @@ def max_value_current_year(value):
 
 class Property_Listing(models.Model):
     
-    uuid = UUIDField(primary_key=False, version=4, editable=True)
+    
     title = models.CharField(max_length=100)
     STATUS = Choices(('Visible', ['new', 'archived', 'active']), ('Invisible', ['draft', 'deleted']))
     status = models.CharField(choices=STATUS, default=STATUS.draft, max_length=30)

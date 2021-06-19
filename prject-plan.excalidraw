@@ -172,9 +172,6 @@
       "boundElementIds": [],
       "startBinding": null,
       "endBinding": null,
-      "lastCommittedPoint": null,
-      "startArrowhead": null,
-      "endArrowhead": null,
       "points": [
         [
           0,
@@ -184,7 +181,10 @@
           -133.35971633086479,
           380.15939258742566
         ]
-      ]
+      ],
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": null
     },
     {
       "type": "line",
@@ -212,9 +212,6 @@
       "boundElementIds": [],
       "startBinding": null,
       "endBinding": null,
-      "lastCommittedPoint": null,
-      "startArrowhead": null,
-      "endArrowhead": null,
       "points": [
         [
           0,
@@ -224,7 +221,10 @@
           102.53374163244939,
           372.57525412492123
         ]
-      ]
+      ],
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": null
     },
     {
       "type": "ellipse",
@@ -331,9 +331,6 @@
       "boundElementIds": [],
       "startBinding": null,
       "endBinding": null,
-      "lastCommittedPoint": null,
-      "startArrowhead": null,
-      "endArrowhead": null,
       "points": [
         [
           0,
@@ -343,7 +340,10 @@
           -154.59970080822632,
           393.0485036008381
         ]
-      ]
+      ],
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": null
     },
     {
       "type": "line",
@@ -371,9 +371,6 @@
       "boundElementIds": [],
       "startBinding": null,
       "endBinding": null,
-      "lastCommittedPoint": null,
-      "startArrowhead": null,
-      "endArrowhead": null,
       "points": [
         [
           0,
@@ -383,7 +380,10 @@
           117.1184531325789,
           402.6627668733819
         ]
-      ]
+      ],
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": null
     },
     {
       "type": "ellipse",
@@ -436,9 +436,6 @@
       "boundElementIds": [],
       "startBinding": null,
       "endBinding": null,
-      "lastCommittedPoint": null,
-      "startArrowhead": null,
-      "endArrowhead": null,
       "points": [
         [
           0,
@@ -448,7 +445,10 @@
           -548.9929599485988,
           251.76031335140362
         ]
-      ]
+      ],
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": null
     },
     {
       "type": "line",
@@ -476,9 +476,6 @@
       "boundElementIds": [],
       "startBinding": null,
       "endBinding": null,
-      "lastCommittedPoint": null,
-      "startArrowhead": null,
-      "endArrowhead": null,
       "points": [
         [
           0,
@@ -488,7 +485,10 @@
           49.45481058125915,
           194.48467789088937
         ]
-      ]
+      ],
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": null
     },
     {
       "type": "text",
@@ -779,9 +779,6 @@
         "focus": -0.24451456394369295,
         "gap": 20.43179930631709
       },
-      "lastCommittedPoint": null,
-      "startArrowhead": null,
-      "endArrowhead": "arrow",
       "points": [
         [
           0,
@@ -799,7 +796,10 @@
           -819.7578517268446,
           -390.85401974589195
         ]
-      ]
+      ],
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow"
     },
     {
       "type": "text",
@@ -914,9 +914,6 @@
       "boundElementIds": [],
       "startBinding": null,
       "endBinding": null,
-      "lastCommittedPoint": null,
-      "startArrowhead": null,
-      "endArrowhead": null,
       "points": [
         [
           0,
@@ -926,7 +923,10 @@
           -495.4929893891017,
           408.67022466296936
         ]
-      ]
+      ],
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": null
     },
     {
       "type": "text",
@@ -1124,9 +1124,6 @@
       "boundElementIds": [],
       "startBinding": null,
       "endBinding": null,
-      "lastCommittedPoint": null,
-      "startArrowhead": null,
-      "endArrowhead": null,
       "points": [
         [
           0,
@@ -1136,7 +1133,10 @@
           424.3229166666665,
           407.82552083333326
         ]
-      ]
+      ],
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": null
     },
     {
       "type": "rectangle",
@@ -1517,9 +1517,6 @@
       "boundElementIds": [],
       "startBinding": null,
       "endBinding": null,
-      "lastCommittedPoint": null,
-      "startArrowhead": null,
-      "endArrowhead": null,
       "points": [
         [
           0,
@@ -1537,7 +1534,10 @@
           -178.91921997070312,
           383.5026550292969
         ]
-      ]
+      ],
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": null
     },
     {
       "type": "line",
@@ -1563,9 +1563,6 @@
       "boundElementIds": [],
       "startBinding": null,
       "endBinding": null,
-      "lastCommittedPoint": null,
-      "startArrowhead": null,
-      "endArrowhead": null,
       "points": [
         [
           0,
@@ -1575,7 +1572,10 @@
           134.1015625,
           344.34898376464844
         ]
-      ]
+      ],
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": null
     },
     {
       "type": "line",
@@ -1601,9 +1601,6 @@
       "boundElementIds": [],
       "startBinding": null,
       "endBinding": null,
-      "lastCommittedPoint": null,
-      "startArrowhead": null,
-      "endArrowhead": null,
       "points": [
         [
           0,
@@ -1613,7 +1610,10 @@
           378.6328125,
           258.3464050292969
         ]
-      ]
+      ],
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": null
     },
     {
       "type": "line",
@@ -1639,9 +1639,6 @@
       "boundElementIds": [],
       "startBinding": null,
       "endBinding": null,
-      "lastCommittedPoint": null,
-      "startArrowhead": null,
-      "endArrowhead": null,
       "points": [
         [
           0,
@@ -1651,7 +1648,10 @@
           31.86187744140625,
           23.7109375
         ]
-      ]
+      ],
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": null
     },
     {
       "type": "text",
@@ -1712,95 +1712,104 @@
       "verticalAlign": "top"
     },
     {
-      "id": "7WjREAt33H_nAVUDDmSuK",
       "type": "text",
+      "version": 40,
+      "versionNonce": 1841448604,
+      "isDeleted": false,
+      "id": "7WjREAt33H_nAVUDDmSuK",
+      "fillStyle": "hachure",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 2,
+      "opacity": 100,
+      "angle": 0,
       "x": 5612.24837942111,
       "y": -1967.244874136787,
-      "width": 569,
-      "height": 3033,
-      "angle": 0,
       "strokeColor": "#e67700",
       "backgroundColor": "#e64980",
-      "fillStyle": "hachure",
-      "strokeWidth": 2,
-      "strokeStyle": "solid",
-      "roughness": 2,
-      "opacity": 100,
+      "width": 569,
+      "height": 2979,
+      "seed": 1864989885,
       "groupIds": [
         "Fee_hFpjdZIho7R8NqNBg"
       ],
       "strokeSharpness": "sharp",
-      "seed": 1864989885,
-      "version": 37,
-      "versionNonce": 1429163997,
-      "isDeleted": false,
-      "boundElementIds": null,
-      "text": "User\n----\nid pk\nusername UNIQUE string\nemail UNIQUE string\nis_email_verified boolean\npassword string\nprofile_image string\nbanner_image string\nfirst_name string\nlast_name string\ndescription textfield\nhome_address_id FK - Addresses.id\ncontacts_id FK >-< Contacts.id\nis_public boolean\nfsbo_listings fk\n----\n\nAddresses\n-----\nid pk\nnumber_name string\nstreet_address_1 string\nstreet_address_2 string\ndevelopment_id fk\nlocality_id fk\nregion_id fk\ncountry_id FK >- Countries.id\npostal_code  string\naddress_lat float\naddress_long float\ntitle string\nis_public boolean\n----\n\nContacts\n----\nid pk\ntype string\ntelephone_number number\nemail email\nhttp_address string\ntitle string\nis_public boolean\n----\n\nProperty_Listings\n----\nid pk\ntitle string\nproperty_type string\n# commercial/residential/business/land\nproperty_status string\n# For Sale/Sold/For Rent/Rented/For Sale and Rent/Under Offer\nis_active boolean\nbed_num number\nbath_num number\nfloors_num number\nfloor_location number\nsq_meters number\nyear_built number\nland_size number\nfurnishings string\n# fully-furnished/partly-furnished/unfurnished/null\nparking_spaces number\nreference string\naddress_id FK >- Addresses.id\nshort_description textfield\nfull_description textfield\nproperty_images string\n# multiple images, need own table?????\nproperty_videos string\n# multiple videos, need own table?????\nfloor_plans string\n# multiple floor plans, need own table?????\ncommunity_features_id FK >-< Community_Features.id\nproperty_features_id FK >-< Property_Features.id\n----\n\nProperty_Features\n----\nid pk fk\ntitle string\n\n\nCommunity_Features\n----\nid pk fk\ntitle string\n----\n\ndevelopments\n----\nid pk\ntitle string\ndescription textfield\n----\n\nLocalities\n----\nid pk FK >- Regions.localities_id\ntitle string\ndescription textfield\ndevelopments_id FK >- developments.id\n----\n\nRegions\n----\nid pk\ntitle string\ndescription textfield\nlocalities_id FK\n----\n\nCountries\n----\nid pk\ntitle string\ndescription textfield\nregions_id FK -< Regions.id\n\n\n\n\n\n\n\n\n\n",
+      "boundElementIds": [],
       "fontSize": 20,
       "fontFamily": 2,
+      "text": "User\n----\nid pk\nusername UNIQUE string\nemail UNIQUE string\nis_email_verified boolean\npassword string\nprofile_image string\nbanner_image string\nfirst_name string\nlast_name string\ndescription textfield\nhome_address_id FK - Addresses.id\ncontacts_id FK >-< Contacts.id\nis_public boolean\nfsbo_listings fk\n----\n\nAddresses\n-----\nid pk\nnumber_name string\nstreet_address_1 string\nstreet_address_2 string\ndevelopment_id fk\nlocality_id fk\nregion_id fk\ncountry_id FK >- Countries.id\npostal_code  string\naddress_lat float\naddress_long float\ntitle string\nis_public boolean\n----\n\nContacts\n----\nid pk\ntype string\ntelephone_number number\nemail email\nhttp_address string\ntitle string\nis_public boolean\n----\n\nProperty_Listings\n----\nuuid pk\ntitle string\nproperty_type string\n# commercial/residential/business/land\nproperty_status string\n# For Sale/Sold/For Rent/Rented/For Sale and Rent/Under Offer\nis_active boolean\nbed_num number\nbath_num number\nfloors_num number\nfloor_location number\nsq_meters number\nyear_built number\nland_size number\nfurnishings string\n# fully-furnished/partly-furnished/unfurnished/null\nparking_spaces number\nreference string\naddress_id FK >- Addresses.id\nshort_description textfield\nfull_description textfield\nproperty_images string\n# multiple images, need own table?????\nproperty_videos string\n# multiple videos, need own table?????\nfloor_plans string\n# multiple floor plans, need own table?????\ncommunity_features_id FK >-< Community_Features.id\nproperty_features_id FK >-< Property_Features.id\n----\n\nProperty_Features\n----\nid pk fk\ntitle string\n\n\nCommunity_Features\n----\nid pk fk\ntitle string\n----\n\ndevelopments\n----\nid pk\ntitle string\ndescription textfield\n----\n\nLocalities\n----\nid pk FK >- Regions.localities_id\ntitle string\ndescription textfield\ndevelopments_id FK >- developments.id\n----\n\nRegions\n----\nid pk\ntitle string\ndescription textfield\nlocalities_id FK\n----\n\nCountries\n----\nid pk\ntitle string\ndescription textfield\nregions_id FK -< Regions.id\n\n\n\n\n\n\n\n\n\n",
+      "baseline": 2975,
       "textAlign": "left",
-      "verticalAlign": "top",
-      "baseline": 3029
+      "verticalAlign": "top"
     },
     {
-      "id": "3-ZdzVRIp-VmBoGOt0Yy7",
       "type": "rectangle",
-      "x": 5200.399624538298,
-      "y": -2356.156434195381,
-      "width": 1170.1556396484377,
-      "height": 3401.5365600585938,
-      "angle": 0,
-      "strokeColor": "#e67700",
-      "backgroundColor": "transparent",
-      "fillStyle": "hachure",
-      "strokeWidth": 2,
-      "strokeStyle": "solid",
-      "roughness": 2,
-      "opacity": 100,
-      "groupIds": [
-        "Fee_hFpjdZIho7R8NqNBg"
-      ],
-      "strokeSharpness": "sharp",
-      "seed": 979947315,
       "version": 193,
       "versionNonce": 2046481843,
       "isDeleted": false,
-      "boundElementIds": null
-    },
-    {
-      "id": "QZRNiz1qC6yCvesPyB8Dq",
-      "type": "text",
-      "x": 5512.48275442111,
-      "y": -2182.062684195381,
-      "width": 470.2793445121949,
-      "height": 103.109375,
-      "angle": 0,
-      "strokeColor": "#e67700",
-      "backgroundColor": "transparent",
+      "id": "3-ZdzVRIp-VmBoGOt0Yy7",
       "fillStyle": "hachure",
       "strokeWidth": 2,
       "strokeStyle": "solid",
       "roughness": 2,
       "opacity": 100,
+      "angle": 0,
+      "x": 5200.399624538298,
+      "y": -2356.156434195381,
+      "strokeColor": "#e67700",
+      "backgroundColor": "transparent",
+      "width": 1170.1556396484377,
+      "height": 3401.5365600585938,
+      "seed": 979947315,
       "groupIds": [
         "Fee_hFpjdZIho7R8NqNBg"
       ],
       "strokeSharpness": "sharp",
-      "seed": 2049454749,
+      "boundElementIds": []
+    },
+    {
+      "type": "text",
       "version": 98,
       "versionNonce": 366169149,
       "isDeleted": false,
-      "boundElementIds": null,
-      "text": "DATABASE",
+      "id": "QZRNiz1qC6yCvesPyB8Dq",
+      "fillStyle": "hachure",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 2,
+      "opacity": 100,
+      "angle": 0,
+      "x": 5512.48275442111,
+      "y": -2182.062684195381,
+      "strokeColor": "#e67700",
+      "backgroundColor": "transparent",
+      "width": 470.2793445121949,
+      "height": 103.109375,
+      "seed": 2049454749,
+      "groupIds": [
+        "Fee_hFpjdZIho7R8NqNBg"
+      ],
+      "strokeSharpness": "sharp",
+      "boundElementIds": [],
       "fontSize": 90.53506097560972,
       "fontFamily": 2,
+      "text": "DATABASE",
+      "baseline": 83.109375,
       "textAlign": "left",
-      "verticalAlign": "top",
-      "baseline": 83.109375
+      "verticalAlign": "top"
     }
   ],
   "appState": {
+    "viewBackgroundColor": "#ffffff",
     "gridSize": null,
-    "viewBackgroundColor": "#ffffff"
+    "scrollX": -6462.222213745117,
+    "scrollY": 229.1606903076172,
+    "zoom": {
+      "value": 0.8,
+      "translation": {
+        "x": 1158.333333333333,
+        "y": 535.9777777777776
+      }
+    }
   }
 }
