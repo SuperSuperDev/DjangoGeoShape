@@ -1,0 +1,13 @@
+<h1>Property Listings Page</h1>
+
+{% for property_listing in property_listings %}
+<div>
+  <a href="/property-listings/{{ property_listing.id }}/">
+    <h1>{{ property_listing.title }}</h1>
+  </a>
+  
+  <p>{{ property_listing.short_description }}</p>
+
+</div>
+{% endfor %}
+<footer>This is my footer</footer>

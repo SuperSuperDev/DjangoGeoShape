@@ -1,0 +1,50 @@
+[
+{
+  "model": "real_estate.property_listing",
+  "pk": 1,
+  "fields": {
+    "uuid": "d60581f5-aec6-4f98-b03b-2d377b2bb215",
+    "title": "Property description title",
+    "status": "active",
+    "listing_status": "for_sale",
+    "listing_type": "residential",
+    "property_type": "house",
+    "bed_num": 1,
+    "bath_num": 1,
+    "floors_num": 1,
+    "floor_location": 1,
+    "sq_meters": 1,
+    "year_built": 2000,
+    "land_size": 4,
+    "furnishings": "unfurnished",
+    "parking_spaces": 3,
+    "reference": "thisIsMyReferencer",
+    "short_description": "This is my short description",
+    "full_description": "This is my longer description"
+  }
+},
+{
+  "model": "real_estate.property_listing",
+  "pk": 2,
+  "fields": {
+    "uuid": "14981b99-01ff-424d-b246-326cd56c7bdb",
+    "title": "Another property Listing",
+    "status": "draft",
+    "listing_status": "for_sale",
+    "listing_type": "residential",
+    "property_type": "house",
+    "bed_num": 3,
+    "bath_num": 3,
+    "floors_num": 3,
+    "floor_location": 0,
+    "sq_meters": 30,
+    "year_built": 2003,
+    "land_size": 100,
+    "furnishings": "unfurnished",
+    "parking_spaces": 0,
+    "reference": "ref for listing 2",
+    "short_description": "This is my second short descripotion",
+    "full_description": "This is my full desctiption for property 2"
+  }
+}
+]
