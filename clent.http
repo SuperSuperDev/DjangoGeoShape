@@ -1,0 +1,3 @@
+
+@PropertyBaseUrl = http://localhost:8000/property-listings
+GET {{PropertyBaseUrl}}
