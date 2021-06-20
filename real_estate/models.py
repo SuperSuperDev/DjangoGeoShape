@@ -1,5 +1,6 @@
 from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
+from django.db.models.deletion import CASCADE
 from model_utils.fields import UUIDField
 from model_utils import Choices
 from model_utils.models import TimeStampedModel
@@ -12,6 +13,27 @@ def current_year():
 def max_value_current_year(value):
     return MaxValueValidator(current_year())(value)
     
+class Country(models.Model):
+    name = models.CharField(max_length=100, null=False)
+    alpha2code = models.CharField(max_length=2, null=False, primary_key=True)
+    flag = models.URLField(verbose_name='Flag Image', max_length=200)
+    
+    def __str__(self):
+        return f'{self.alpha2code} - {self.name}'
+
+# class TownCityRegion(models.Model):
+#     town = models.CharField(max_length=50, null=False)
+#     county = models.CharField(max_length=50, null=False)
+#     region = models.CharField(max_length=50, null=False)
+#     country = models.ForeignKey(
+#         Country,
+#         related_name= 'town_city_region',
+#         on_delete=models.CASCADE,
+#         null=True,
+#     )
+
+
+
 
 class Property_Listing(models.Model):
     
@@ -65,7 +87,17 @@ class Property_Listing(models.Model):
     # media - img, vid, pdf, files/docs
     short_description = models.CharField(null=False, max_length=500)
     full_description = models.TextField(null=False, max_length=50000)
+    
 
     def __str__(self):
         return f'{self.title} - {self.listing_type} {self.property_type} {self.listing_status}'
     
+
+class Image(models.Model):
+    img_url = models.URLField(verbose_name="Property Image URL", max_length=200)
+    property_listing = models.ForeignKey(
+        Property_Listing,
+        related_name = 'images',
+        on_delete=models.CASCADE
+    )
+

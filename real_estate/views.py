@@ -8,13 +8,21 @@ from rest_framework.exceptions import NotFound
 
 # Create your views here.
 
-from .models import Property_Listing
-from .serializers import PropertyListingSerializer 
+from .models import Country, Property_Listing, Image
+from .serializers import CountrySerializer, PropertyListingSerializer, PopulatedPropertyListingSerializer, ImageSerializer 
+
+class CountryListView(APIView):
+
+    def get(self, _request):
+        countries = Country.objects.all()
+        serialized_countries = CountrySerializer(countries, many=True)
+        return Response(serialized_countries.data, status=status.HTTP_200_OK)
+        
 class PropertyListingListView(APIView):
 
     def get(self, _request):
         property_listings = Property_Listing.objects.all()
-        serialized_property_listings = PropertyListingSerializer(property_listings, many=True)
+        serialized_property_listings = PopulatedPropertyListingSerializer(property_listings, many=True)
         return Response(serialized_property_listings.data, status=status.HTTP_200_OK)
     
     def post(self, request):
@@ -34,7 +42,7 @@ class PropertyListingDetailView(APIView):
     
     def get(self, _request, pk):
         property_listing = self.get_Property_Listing(pk=pk)
-        serialized_property_listing = PropertyListingSerializer(property_listing)
+        serialized_property_listing = PopulatedPropertyListingSerializer(property_listing)
         return Response(serialized_property_listing.data, status=status.HTTP_200_OK)
         
 
@@ -52,6 +60,25 @@ class PropertyListingDetailView(APIView):
         return Response(updated_property_listing.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
 
+class ImageListView(APIView):
+
+    def post(self, request, plist_pk):
+        request.data['property_listing'] = plist_pk
+        serialized_image = ImageSerializer(data=request.data)
+        if serialized_image.is_valid():
+            serialized_image.save()
+            return Response(serialized_image.data, status=status.HTTP_201_CREATED)
+        return Response(serialized_image.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+
+class ImageDetailView(APIView):
+
+    def delete(self, _request, _plist_pk, image_pk):
+        try:
+            image_to_delete = Image.objects.get(pk=image_pk)
+            image_to_delete.delete()
+            return Response(status=status.HTTP_204_NO_CONTENT)
+        except Image.DoesNotExist:
+            raise NotFound()
 
 # class PropertyListingListView(View):
 

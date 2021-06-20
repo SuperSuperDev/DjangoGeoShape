@@ -1,6 +1,7 @@
 
 @PropertyBaseUrl = http://localhost:8000/api/property-listings
-@PropertyId = 1
+@PropertyId = 2
+@ImageId = 3
 
 ### GET ALL
 GET {{PropertyBaseUrl}}/
@@ -59,3 +60,14 @@ Content-Type: application/json
   "shortDescription": "This is my short description",
   "fullDescription": "This is my longer description"
 }
+
+### CREATE IMAGE
+POST {{PropertyBaseUrl}}/{{PropertyId}}/images/
+Content-Type: application/json
+
+{
+  "imgUrl": "https://env-0561487.jcloud-ver-jpe.ik-server.com/chiangmaiestateagents/wp-content/uploads/sites/6/2016/08/image2-3.jpg"
+}
+
+### DELETE IMAGE
+DELETE {{PropertyBaseUrl}}/{{PropertyId}}/images/{{ImageId}}/
