@@ -1,4 +1,4 @@
-
+@baseUrl = http://localhost:8000/
 @PropertyBaseUrl = http://localhost:8000/api/property-listings
 @PropertyId = 2
 @ImageId = 3
@@ -30,7 +30,8 @@ Content-Type: application/json
   "parking_spaces": 0,
   "reference": "My ref",
   "short_description": "This is a great new home",
-  "full_description": "A great new home offered for sale in a great place"
+  "full_description": "A great new home offered for sale in a great place",
+  "address": 1
 }
 
 ### DELETE SINGLE 
@@ -71,3 +72,14 @@ Content-Type: application/json
 
 ### DELETE IMAGE
 DELETE {{PropertyBaseUrl}}/{{PropertyId}}/images/{{ImageId}}/
+
+### COUNTRIES ###
+
+### GET COUNTRIES
+GET {{baseUrl}}cities/api/countries/
+
+### GET REGIONS
+GET {{baseUrl}}cities/api/regions/
+
+### GET CITIES
+GET {{baseUrl}}cities/api/cities/?q=chiangmai
