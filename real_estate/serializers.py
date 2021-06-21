@@ -1,11 +1,14 @@
 from rest_framework import serializers
-from .models import Property_Listing, Image, Country
+from .models import Property_Listing, Image, Address
 
-class CountrySerializer(serializers.ModelSerializer):
-
+class AddressSerializer(serializers.ModelSerializer):
+    country = serializers.StringRelatedField(many=False)
+    region = serializers.StringRelatedField(many=False)
+    subregion = serializers.StringRelatedField(many=False)
+    city = serializers.StringRelatedField(many=False)
     class Meta:
-        model = Country
-        fields = '__all__'
+            model = Address
+            fields = '__all__' 
 
 class ImageSerializer(serializers.ModelSerializer):
     
@@ -20,3 +23,4 @@ class PropertyListingSerializer(serializers.ModelSerializer):
 
 class PopulatedPropertyListingSerializer(PropertyListingSerializer):
     images = ImageSerializer(many=True)
+    address = AddressSerializer(many=False)

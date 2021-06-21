@@ -31,14 +31,16 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
     'real_estate',
+    'cities_light',
+    'smart_selects',
 ]
 
 MIDDLEWARE = [
@@ -138,3 +140,11 @@ REST_FRAMEWORK = {
     )
     
 }
+
+CITIES_LIGHT_TRANSLATION_LANGUAGES = ['th', 'en', 'abbr']
+CITIES_LIGHT_INCLUDE_COUNTRIES = ['TH', 'GB']
+CITIES_LIGHT_INCLUDE_CITY_TYPES = ['PPL', 'PPLA', 'PPLA2', 'PPLA3', 'PPLA4', 'PPLA5', 'PPLC', 'PPLF', 'PPLG', 'PPLL', 'PPLR', 'PPLS', 'STLMT']
+CITIES_LIGHT_CITY_SOURCES = ['http://download.geonames.org/export/dump/TH.zip', 'http://download.geonames.org/export/dump/GB.zip']
+
+
+

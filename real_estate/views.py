@@ -8,8 +8,8 @@ from rest_framework.exceptions import NotFound
 
 # Create your views here.
 
-from .models import Country, Property_Listing, Image
-from .serializers import CountrySerializer, PropertyListingSerializer, PopulatedPropertyListingSerializer, ImageSerializer 
+from .models import Property_Listing, Image
+from .serializers import PropertyListingSerializer, PopulatedPropertyListingSerializer, ImageSerializer 
 
 class CountryListView(APIView):
 
