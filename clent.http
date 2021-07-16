@@ -1,6 +1,6 @@
 @baseUrl = http://localhost:8000/
 @PropertyBaseUrl = http://localhost:8000/api/property-listings
-@PropertyId = 2
+@PropertyId = 3
 @ImageId = 3
 
 ### GET ALL
@@ -14,7 +14,7 @@ POST {{PropertyBaseUrl}}/
 Content-Type: application/json
 
 {
-  "title": "Great new home",
+  "title": "TEST Great new home",
   "status": "draft",
   "listing_status": "for_sale",
   "listing_type": "residential",

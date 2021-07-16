@@ -12,6 +12,7 @@ djangorestframework = "*"
 djangorestframework-camel-case = "*"
 django-cities-light = "*"
 django-smart-selects = "*"
+geos = "*"
 
 [dev-packages]
 
