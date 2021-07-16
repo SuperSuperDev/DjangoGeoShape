@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'real_estate',
     'cities_light',
     'smart_selects',
+    'world',
 ]
 
 MIDDLEWARE = [
@@ -80,7 +81,8 @@ WSGI_APPLICATION = 'project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': 'final-project-4-db',
         'HOST': 'localhost',
         'PORT': 5432
