@@ -13,6 +13,9 @@ djangorestframework-camel-case = "*"
 django-cities-light = "*"
 django-smart-selects = "*"
 geos = "*"
+proj = "*"
+gdal = "*"
+geoip = "*"
 
 [dev-packages]
 

@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "dc14cd91bd199a6ab4bc5e87a0d21ce1be48cae1c2c95e5e395dcfa9c7a49db7"
+            "sha256": "a38edc45f68f069215a76a673ebd76692b62af62433910bbd12199c05a8b9b76"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,6 +16,14 @@
         ]
     },
     "default": {
+        "arrow": {
+            "hashes": [
+                "sha256:77a60a4db5766d900a2085ce9074c5c7b8e2c99afeaa98ad627637ff6f292510",
+                "sha256:dee7602f6c60e3ec510095b5e301441bc56288cb8f51def14dcb3079f623823a"
+            ],
+            "markers": "python_version >= '3.6'",
+            "version": "==1.1.1"
+        },
         "asgiref": {
             "hashes": [
                 "sha256:4ef1ab46b484e3c706329cedeff284a5d40824200638503f5768edb6de7d58e9",
@@ -100,6 +108,20 @@
             ],
             "markers": "python_version >= '3.6'",
             "version": "==2.0.1"
+        },
+        "gdal": {
+            "hashes": [
+                "sha256:776ad8f499919d6824b7ba3ae8bd53b2df5d73a14dc047ebc8f33f9507c8dcc5"
+            ],
+            "index": "pypi",
+            "version": "==3.3.1"
+        },
+        "geoip": {
+            "hashes": [
+                "sha256:a890da6a21574050692198f14b07aa4268a01371278dfc24f71cd9bc87ebf0e6"
+            ],
+            "index": "pypi",
+            "version": "==1.3.2"
         },
         "geos": {
             "hashes": [
@@ -312,6 +334,14 @@
             ],
             "version": "==3.53.1"
         },
+        "proj": {
+            "hashes": [
+                "sha256:350b8f46d49e1a5080bb6dff61f8a18c11e81caf2ae0a3ede04e293c9cb891db",
+                "sha256:acf1e0a6aa3d6e3a7ca56f9a1b25abce80d1e9d6a69d57c89a2bce43133ff65d"
+            ],
+            "index": "pypi",
+            "version": "==0.2.0"
+        },
         "psycopg2-binary": {
             "hashes": [
                 "sha256:0b7dae87f0b729922e06f85f667de7bf16455d411971b2043bbd9577af9d1975",
@@ -354,6 +384,14 @@
             ],
             "index": "pypi",
             "version": "==2.9.3"
+        },
+        "python-dateutil": {
+            "hashes": [
+                "sha256:0123cacc1627ae19ddf3c27a5de5bd67ee4586fbdd6440d9748f8abb483d3e86",
+                "sha256:961d03dc3453ebbc59dbdea9e4e11c5651520a876d0f4db161e8674aae935da9"
+            ],
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
+            "version": "==2.8.2"
         },
         "python-utils": {
             "hashes": [
