@@ -1,15 +1,15 @@
-real-estate# Seeding Data in Django
+# Seeding Data in Django
 
-# django
+## django -
 
 - Have Django create a seeds file automatically from the data that already exists in the table `python manage.py dumpdata app-name --output app-name/seeds.json --indent=2` - Depending on if you need to change this data at all, or add more, this command could be a one time thing.
 - Empty the database of all rows inside currently. `python manage.py flush` and answer "yes" when prompted.
 - Load your data from the seeds file, back into the database. `python manage.py loaddata app_name/seeds.json`
 - Create your superuser again, as you have been deleted too `python manage.py createsuperuser`
 
-# Resetting a Postgres DB w Django
+## Resetting a Postgres DB w/Django
 
-# django
+## django
 
 - Drop the database `dropdb db_name`
 - Delete migration...except `__init__.py`
@@ -18,16 +18,16 @@ real-estate# Seeding Data in Django
 - migrate `python manage.py migrate`
 - If you want to re seed, you can now `python loadata .......`
 
-# Setting up a Django Project - DRF
+## Setting up a Django Project - DRF
 
-# django
+## Django
 
 - Create a new environment, and install Django into it `pipenv install django`
 - ✅Enter into that virtual environment with the command `pipenv shell`. You should see the command prompt change slightly
 - ✅Start a new Django Project `django-admin startproject project .`
 - ✅If not prompted by VS Code, install pylint `pipenv install pylint`. Create a `.pylintrc` file in the root of your project and add the following rules
 
-```
+```.pylint
 [MESSAGES CONTROL]
 disable=arguments-differ,missing-function-docstring,missing-class-docstring,no-self-use,raise-missing-from,no-member,missing-module-docstring,invalid-name,too-few-public-methods, relative-beyond-top-level
 ```
@@ -47,7 +47,9 @@ DATABASES = {
 }
 ```
 
-    *   Install database adapter for Django/Postgres  ```pipenv install psycopg2-binary```
+## Install database adapter for Django/Postgres  
+
+```pipenv install psycopg2-binary```
     *   ✅ Create the database in Postgres `createdb name-of-database`
 
 - ✅ Run the initial migrations for the app, to create all the default tables `python manage.py migrate`
@@ -56,7 +58,7 @@ DATABASES = {
 - ✅ Create a super user for the admin app, `python manage.py createsuperuser` answer prompts using sensible defaults
 - ✅ Navigate to the admin site at `localhost:8000/admin` and login in with your super user credentials
 
-# Creating Django Apps
+## Creating Django Apps
 
 - Create a new app within the project `django-admin startapp app-name`
 - Register my new app in the `project/settings.py`
@@ -67,9 +69,11 @@ DATABASES = {
   - Run your server and visit the admin app `localhost:8000/admin`
   - Add a `__str__` method to your class to make your items easier to read in the admin app.
 
-# Install Django and create Environment
+## Install Django and create Environment
 
-    Create a new environment, and install Django into it `pipenv install django`
+### Create a new environment, and install Django into it
+
+`pipenv install django`
 
 - Enter into that virtual environment with the command `pipenv shell`. You should see the command prompt change slightly
 - Start a new Django Project `django-admin startproject project .`
@@ -80,9 +84,9 @@ DATABASES = {
 - Create a super user for the admin app, `python manage.py createsuperuser` answer prompts using sensible defaults
 - Navigate to the admin site at `localhost:8000/admin` and login in with your super user credentials
 
-# Custom User Django
+## Custom User Django
 
-# django
+### django Start New App
 
 - Start a new app, for my custom user. `django-admin startapp jwt_auth`
 - Add that new app to your `project/settings.py INSTALLED_APPS`
@@ -92,9 +96,7 @@ DATABASES = {
 - You may now need to reset your DB
 - Add your new user model to the admin site.
 
-# Token Auth - Django
-
-# django
+### Token Auth - Django
 
 - Add the Python Json Web Token package. `pipenv install pyjwt`
 - Create a `jwt_auth/authentication.py` file, this will play the same role as `secureRoute` and will prevent non logged in requests working.
@@ -117,7 +119,7 @@ REST_FRAMEWORK = {
 - Add `jwt_auth/urls.py` file, and hook up to project urls.
 - Add permission classes to any views you now want to be protected by authentication.
 
-# JWT Model(?) Django
+### JWT Model(?) Django
 
 ```python
 from rest_framework.authentication import BasicAuthentication
