@@ -16,8 +16,11 @@ geos = "*"
 proj = "*"
 gdal = "*"
 geoip = "*"
+djangorestframework-gis = "*"
+django-filter = "*"
 
 [dev-packages]
+autopep8 = "*"
 
 [requires]
 python_version = "3.9"

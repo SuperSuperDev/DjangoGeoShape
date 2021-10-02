@@ -76,10 +76,10 @@ DELETE {{PropertyBaseUrl}}/{{PropertyId}}/images/{{ImageId}}/
 ### COUNTRIES ###
 
 ### GET COUNTRIES
-GET {{baseUrl}}cities/api/countries/
+GET {{baseUrl}}cities/api/countries/?q=tha
 
 ### GET REGIONS
-GET {{baseUrl}}cities/api/regions/
+GET {{baseUrl}}cities/api/regions/?q=chiang
 
 ### GET CITIES
-GET {{baseUrl}}cities/api/cities/?q=chiangmai
+GET {{baseUrl}}cities/api/cities/?q=sanphakw
