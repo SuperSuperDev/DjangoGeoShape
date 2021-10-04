@@ -1,5 +1,5 @@
 from django.contrib.gis.db import models
-
+from django.contrib.gis.geos import Point
 # Create your models here.
 
 
@@ -174,6 +174,25 @@ subdistrict_mapping = {
     'validon': 'validOn',
     'geom': 'MULTIPOLYGON',
 }
+
+class POI(models.Model):
+    lat = models.DecimalField(max_digits=10, decimal_places=6)
+    lng = models.DecimalField(max_digits=10, decimal_places=6)
+    loc = models.PointField(geography=True, srid=4326, default=Point(100.52974993962351,13.741090616723785))
+    subdistrict = models.ForeignKey(
+        SubDistrict,
+        related_name='pois',
+        null=True,
+        blank=True,
+        on_delete=models.CASCADE
+    )
+    
+    def save(self, *args, **kwargs):
+        self.subdistrict = SubDistrict.objects.get(geom__contains=self.loc)
+        super(POI, self).save(*args, **kwargs)      
+    
+
+
 # class thailandPlaces(models.Model):
 #     adm0_en = models.CharField(max_length=50)
 #     adm0_th = models.CharField(max_length=50)

@@ -7,6 +7,9 @@ from model_utils import Choices
 from model_utils.models import TimeStampedModel
 import datetime
 from thailand.models import thailandPlaces 
+from globe.models import Country, Province, District, SubDistrict, POI
+from django.contrib.gis.geos import Point
+from django.contrib.gis.db import models as gis_models 
 #from cities_light.models import City, Country, Region, SubRegion
 from smart_selects.db_fields import ChainedForeignKey
 # Create your models here.
@@ -18,15 +21,44 @@ def max_value_current_year(value):
     return MaxValueValidator(current_year())(value)
     
 class Address(models.Model):
-    # country = models.ForeignKey(
-    #     Country,
-    #     verbose_name='Country',
-    #     related_name='addreses',
-    #     on_delete=models.CASCADE
-    # )
-#    region = ChainedForeignKey(Region, chained_field='country', chained_model_field='country')
-#    subregion = ChainedForeignKey(SubRegion, chained_field='region', chained_model_field='region')
-#    city = ChainedForeignKey(City, chained_field='subregion', chained_model_field='subregion', blank=True, null=True)
+    poi = models.ForeignKey(
+        POI,
+        related_name='pois',
+        on_delete=CASCADE, 
+        null=True, 
+        blank=True
+        )
+    country = models.ForeignKey(
+        Country,
+        verbose_name='Country',
+        related_name='addreses',
+        on_delete=models.CASCADE,
+        default='TH'
+    )
+    province = ChainedForeignKey(
+        Province, 
+        chained_field='country', 
+        chained_model_field='adm0_pcode',
+        show_all=True,
+        auto_choose=True,
+        sort=True
+        )
+    district = ChainedForeignKey(
+        District, 
+        chained_field='province', 
+        chained_model_field='adm1_pcode',
+        show_all=True,
+        auto_choose=True,
+        sort=True
+        )
+    subdistrict = ChainedForeignKey(
+        SubDistrict, 
+        chained_field='district', 
+        chained_model_field='adm2_pcode',
+        show_all=False,
+        auto_choose=True,
+        sort=True
+        )
     building_number = models.CharField(primary_key=True, max_length=200)
     address1 = models.CharField(verbose_name='Street Address 1', max_length=200, blank=True, null=True)
     address2 = models.CharField(verbose_name='Street Address 2', max_length=200, blank=True, null=True)
