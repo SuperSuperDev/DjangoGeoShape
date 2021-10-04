@@ -9,3 +9,17 @@ This app uses shapefiles to seed data, using .shp files for Country, Province, D
 The original shp files can be found at:
 
 [humdata.org]('https://data.humdata.org/dataset/thailand-administrative-boundaries')
+
+## Installing GDAL
+
+Any issues with activating the python environment and installing the requirements.txt may be resolved by runnin the following commands:
+
+```bash
+pip install GDAL==$(gdal-config --version) --global-option=build_ext --global-option="-I/usr/include/gdal"
+```
+
+The run:
+
+```bash
+pip install -r requirements.txt
+```
