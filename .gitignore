@@ -7,3 +7,8 @@
 *.sbx
 /**/allGlobeTH.json
 *seeds.json
+.venv
+venv
+env
+.env
+tmp

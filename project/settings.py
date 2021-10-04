@@ -87,7 +87,8 @@ DATABASES = {
 #        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': 'final-project-4-db',
-#        'USER': 'geo',
+        'USER': 'super',
+        'PASSWORD': '13851385',
         'HOST': 'localhost',
         'PORT': 5432
     }
