@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.gis',
+    'permissions',
     'real_estate',
 #    'cities_light',
     'smart_selects',

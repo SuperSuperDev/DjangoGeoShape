@@ -97,7 +97,7 @@ class Property_Listing(models.Model):
     LISTING_STATUS = Choices(
         ('for_sale', ('For Sale')),
         ('for_rent', ('For Rent')),
-        ('for_rent', ('For Sale and Rent')),
+        ('for_sale_rent', ('For Sale and Rent')),
         ('rental_under_offer', ('Rental - Under Offer')),
         ('sale_under_offer', ('Sale - Under Offer')),
         ('sold', ('Sold')), ('rented', ('Rented'))
