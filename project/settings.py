@@ -39,9 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.gis',
-    'permissions',
+    # 'jwt_auth',
     'real_estate',
-#    'cities_light',
     'smart_selects',
     'world',
     'thailand',
@@ -146,7 +145,10 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_PARSER_CLASSES': (
         'djangorestframework_camel_case.parser.CamelCaseJSONParser',
-    )
+    ),
+    # 'DEFAULT_AUTHENTICATION_CLASSES': [
+    #     'jwt_auth.authentication.JWTAuthentication'
+    # ],
     
 }
 
