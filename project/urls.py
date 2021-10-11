@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/property-listings/', include('real_estate.urls')),
     path('api/auth/', include('jwt_auth.urls')),
+    path('api/globe/', include('globe.urls')),
     path('chaining/', include('smart_selects.urls')),
 #    re_path(r'^cities/api/', include('cities_light.contrib.restframework3')),
 ]

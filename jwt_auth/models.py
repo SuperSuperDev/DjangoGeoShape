@@ -12,7 +12,7 @@ class User(AbstractUser):
     email = models.EmailField(max_length=100, unique=True)
     user_image = models.CharField(
         max_length=250, 
-        default=f'https://avatars.dicebear.com/api/avataaars/{random_string}.svg?size=150' 
+        default=f'https://avatars.dicebear.com/api/avataaars/{random_string()}.svg?size=150' 
         )
     bio = models.TextField(max_length=500, blank=True)
     dark_mode = models.BooleanField(default=False)

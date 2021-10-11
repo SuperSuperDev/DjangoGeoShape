@@ -12,4 +12,4 @@ class PopulatedUserSerializer(ModelSerializer):
 
     class Meta:
         model = User
-        fields = ('id', 'username', 'name', 'dark_mode', 'created_sprints', 'city')
+        fields = ('id', 'username', 'first_name', 'last_name', 'email', 'dark_mode', 'user_image',)
