@@ -6,7 +6,7 @@ from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnl
 from .serializers import CountryListSerializer, CountrySerializer, ProvinceSerializer, ProvinceListSerializer, DistrictSerializer, SubDistrictSerializer, POISerializer
 from .models import Country, Province, District, SubDistrict, POI
 
-
+# Display all countries
 class CountryListView(APIView):
     permission_classes = (IsAuthenticatedOrReadOnly,)
 
@@ -15,6 +15,7 @@ class CountryListView(APIView):
         serializer = CountryListSerializer(countries, many=True)
         return Response(serializer.data)
 
+# Display all provinces in a country
 class ProvinceListView(APIView):
     permission_classes = (IsAuthenticatedOrReadOnly,)
 

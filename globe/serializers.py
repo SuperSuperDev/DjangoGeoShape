@@ -21,7 +21,7 @@ class ProvinceListSerializer(serializers.GeoModelSerializer):
     class Meta:
         model = Province
         geo_field = 'geom'
-        fields = ('adm1_pcode', 'adm1_en', 'adm1_th', 'adm0_en')
+        fields = ('adm1_pcode', 'adm1_en', 'adm1_th', 'adm0_en', geo_field)
 
 class DistrictSerializer(serializers.GeoModelSerializer):
     class Meta:
