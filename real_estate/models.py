@@ -64,12 +64,12 @@ class Address(models.Model):
     address2 = models.CharField(verbose_name='Street Address 2', max_length=200, blank=True, null=True)
     locale = models.CharField(max_length=100, blank=True, null=True)
     postal = models.CharField(verbose_name="Postal Code", max_length=50, blank=True, null=True)
-    place = models.ForeignKey(
-        thailandPlaces, 
-        blank=True, 
-        null=True, 
-        on_delete=CASCADE
-        )
+    # place = models.ForeignKey(
+    #     thailandPlaces, 
+    #     blank=True, 
+    #     null=True, 
+    #     on_delete=CASCADE
+    #     )
 
     def __str__(self):
         return f'{self.building_number} {self.address1} {self.locale}'
