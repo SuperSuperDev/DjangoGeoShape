@@ -39,13 +39,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.gis',
-    # 'jwt_auth',
+    # 'cities',
     'real_estate',
     'smart_selects',
     'world',
     'thailand',
     'rest_framework_gis',
     'globe',
+    'jwt_auth',
+    # 'geo_import',
 ]
 
 MIDDLEWARE = [
@@ -113,6 +115,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# The user model
+AUTH_USER_MODEL = 'jwt_auth.User'
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
@@ -146,9 +150,9 @@ REST_FRAMEWORK = {
     'DEFAULT_PARSER_CLASSES': (
         'djangorestframework_camel_case.parser.CamelCaseJSONParser',
     ),
-    # 'DEFAULT_AUTHENTICATION_CLASSES': [
-    #     'jwt_auth.authentication.JWTAuthentication'
-    # ],
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'jwt_auth.authentication.JWTAuthentication'
+    ],
     
 }
 

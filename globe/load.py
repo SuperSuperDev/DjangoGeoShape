@@ -3,6 +3,10 @@ from pathlib import Path
 from django.contrib.gis.utils import LayerMapping
 from .models import Country, Province, District, SubDistrict
 
+# TODO load any shapefile, get the model fields with the function , and create the model
+
+
+
 country_mapping = {
     'shape_leng': 'Shape_Leng',
     'shape_area': 'Shape_Area',
@@ -13,6 +17,7 @@ country_mapping = {
     'validon': 'validOn',
     'geom': 'MULTIPOLYGON',
 }
+
 
 country_shapefile = Path(__file__).resolve().parent / 'data/tha_adm_rtsd_itos_20190221_SHP_PART_1' / 'tha_admbnda_adm0_rtsd_20190221.shp'
 

@@ -27,7 +27,10 @@ class RegisterView(APIView):
         # Proceed if valid
         if user_to_create.is_valid():
             user_to_create.save()
-            return Response({"message": "Registration Successful"}, status=status.HTTP_201_CREATED)
+            return Response(
+                {'message': 'Registration Successful'}, 
+                status=status.HTTP_201_CREATED
+                )
 
         # Send back 422 if not valid
         return Response(user_to_create.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
@@ -36,8 +39,8 @@ class RegisterView(APIView):
 class LoginView(APIView):
     def post(self, request):
         # Get the email and password from the body of the request
-        email = request.data.get("email")
-        password = request.data.get("password")
+        email = request.data.get('email')
+        password = request.data.get('password')
 
         # Use the email to try and find the User in the database
         try:
@@ -55,18 +58,18 @@ class LoginView(APIView):
         # Create the token to send back using jwt
         token = jwt.encode(
             {
-                # This will be the "subject" of the token
+                # This will be the 'subject' of the token
                 # i.e. the user in the form of their primary_key/id
-                "sub": user_to_login.id,
+                'sub': user_to_login.id,
                 # This converts the expiry time to a UNIX timestamp
-                "exp": int(expiry_time.strftime("%s")),
+                'exp': int(expiry_time.strftime('%s')),
             },
             settings.SECRET_KEY,
-            algorithm="HS256",
+            algorithm='HS256',
         )
 
         # Send back a positive response if login is OK
-        return Response({"token": token, "message": f"Welcome back, {user_to_login.username}"})
+        return Response({'token': token, 'message': f'Welcome back, {user_to_login.username}'})
 
 # We will use this to get a user's profile for the dashboard
 class UserProfileView(APIView):

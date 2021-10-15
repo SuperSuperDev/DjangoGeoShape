@@ -2,7 +2,37 @@
 @PropertyBaseUrl = http://localhost:8000/api/property-listings
 @PropertyId = 3
 @ImageId = 3
+@AuthUrl = http://localhost:8000/api/auth/
+@GlobeUrl = http://localhost:8000/api/globe/
+@UserToken = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsImV4cCI6MTYzNDU3OTk2OH0.VFpKA4L88I_IrYq6KyKLhh2btLTuAbsKRYjHjW3QTlc
 
+### GET Globe Items
+GET {{GlobeUrl}}TH/
+Authorization: Bearer {{UserToken}}
+### REGISTER NEW USER
+POST {{AuthUrl}}register/
+Content-Type: application/json
+
+{
+    "email": "test3@test.com",
+    "password": "test",
+    "password_confirmation": "test",
+    "first_name": "testfn3",
+    "last_name": "testln3",
+    "username": "testusername3"
+    }
+
+### LOGIN USER
+POST {{AuthUrl}}login/
+Content-Type: application/json
+
+{
+    "email": "test@test.com",
+    "password": "test"
+    }
+
+### GET USER PROFILE
+GET {{AuthUrl}}profile/4/
 ### GET ALL
 GET {{PropertyBaseUrl}}/
 
