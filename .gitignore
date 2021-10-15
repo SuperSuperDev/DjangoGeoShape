@@ -12,3 +12,6 @@ venv
 env
 .env
 tmp
+django-cities
+geo_import
+*.zip

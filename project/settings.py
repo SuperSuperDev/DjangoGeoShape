@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.gis',
+    # 'cities',
     'real_estate',
     'smart_selects',
     'world',
@@ -46,6 +47,7 @@ INSTALLED_APPS = [
     'rest_framework_gis',
     'globe',
     'jwt_auth',
+    # 'geo_import',
 ]
 
 MIDDLEWARE = [
